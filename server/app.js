@@ -15,12 +15,11 @@ var cors = require("cors");
 
 app.use(cors());
 
-// replace xxx with your creds of mlab
 mongoose
-	.connect("mongodb://xxx:xxx@ds263107.mlab.com:63107/bciit", {
+	.connect("mongodb://nikhil:nikhil001@ds263107.mlab.com:63107/bciit", {
 		auth: {
-			user: "xxx",
-			password: "xxx"
+			user: "nikhil",
+			password: "nikhil001"
 		}
 	})
 	.then(() => console.log("Connected to database..."))
